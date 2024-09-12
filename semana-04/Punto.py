@@ -51,12 +51,7 @@ class Punto:
 
         return math.sqrt((dx ** 2 + dy ** 2))
 
-    # Sobrecarga de operadores
+    # Sobrecarga de operador +
     def __add__(self, other):
         return Punto(self._x + other.x, self._y + other.y)
 
-    def __gt__(self, other):
-        pass
-
-    def __iadd__(self, other):  # Operador +=
-        pass
